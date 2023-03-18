@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Yellow Gang Tocke</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      h1 {
+        text-align: center;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        margin-bottom: 5px;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      input[type="text"], input[type="number"] {
+        padding: 5px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 200px;
+        margin-bottom: 10px;
+      }
+      button {
+        padding: 5px 10px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        background-color: #1E90FF;
+        color: #fff;
+        cursor: pointer;
+        margin-right: 10px;
+      }
+      #counter {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      #names {
+        width: 200px;
+        float: left;
+        margin-right: 10px;
+      }
+      #history {
+        width: 400px;
+        float: left;
+      }
+      </style>
+
+  </head>
+  
+  <body>
+    
+    <h1>YELLOW GANG TOCKE</h1>
+    <p>Yellow gang tocke vodi Sagadin(lučkar).</p>
+    <form>
+      
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+      <label for="points">Points:</label>
+      <input type="number" id="points" name="points"><br>
+       <label for="reason">Reason:</label>
+  <input type="text" id="reason" name="reason"><br>
+      <button type="button" id="add">+</button>
+      <button type="button" id="subtract">-</button>
+      <br>
+      </form>
+    <h2>Members:</h2>
+    <ul id="names"></ul>
+    <h2><br><h2>
+     <form>
+    <label for="new-name"><br>Dodaj clana:</label>
+      <input type="text" id="new-name" name="new-name">
+      <button type="button" id="add-name">Dodaj ime</button>
+      </form>
+     
+        <from>
+      <label for="remove-name">Odstrani clana:</label>
+      <input type="text" id="remove-name" name="remove-name">
+      <button type="button" id="remove">Zbrisi</button>
+      </form>
+      <h2>Zgodovina</h2>
+      <ul id="history"></ul>
+    <script src="renderer.js"></script>
+  </body>
+</html>
